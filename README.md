@@ -31,7 +31,7 @@ Pre-processing the consolidated historic stock data includes
 
 To perform the pre-processing, we employ a multi-threaded method that queries the stock in question (essentially, the stock for which the transcript data exists), to retrive the close and volume on all the dates in all CSV files present in the prices directory.
 
-Usage
+### Usage
 ```bash
 ./scripts/preprocess.sh 
 
@@ -43,7 +43,10 @@ We employ a novel model to predict the risk for the upcoming quarter by utilizin
 The proposed architecture is as follows
 ![image](assets/arch.png)
 
-Usage
+We input the Historic Stock Prices and use a `conv1d` layer to replicate a moving average computation. The "averaged" prices are passed onto an `LSTM` layer to learn the dynamics of the stock. Parallelly, the Earning Call Transcripts and query `GPT3` to get strong encodings. </br>
+Both these contexts are combined using a `cross-attention` block followed by a `fully-connected` layer to predict the risk associated with the next quarter.
+
+### Usage
 ```python
 predictor = QualitativePredictor("AAPL")
 predictor.fit(max_epochs=20)
