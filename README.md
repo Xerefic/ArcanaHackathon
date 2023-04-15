@@ -41,5 +41,5 @@ Usage
 We employ a novel model to predict the risk for the upcoming quarter by utilizing the Historic Stock Data and the Earning Call Transcripts for that quarter.
 
 The proposed architecture is as follows
-
+![image](assets/arch.png)
 
