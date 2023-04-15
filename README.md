@@ -11,13 +11,13 @@
     ├──── <Stock Name 1>
         ├──── <Year(s)>                         # Folder containing the Earning Call Transcripts for the 4 Quarters in that Year.
         └──── price.csv                         # CSV file containing the historic data for close and volume of the particular stock.
-    ├──── <Stock Name 1>
+    ├──── <Stock Name 2>
         ├──── <Year(s)>
         └──── price.csv
     ├── prices
-        ├──── bq-results-<date>-<time>-<id>.csv # CSV file containing the data for close and volume of all stocks.
-        ├──── bq-results-<date>-<time>-<id>.csv
-        └──── bq-results-<date>-<time>-<id>.csv
+        ├──── bq-results-<date>-<time>-<id 1>.csv # CSV file containing the data for close and volume of all stocks.
+        ├──── bq-results-<date>-<time>-<id 2>.csv
+        └──── bq-results-<date>-<time>-<id 3>.csv
     ├── scripts
         ├──── preprocess.sh                     # bash script to parse through the CSV files in the prices directory to automatically segregate the transcations according to stocks.
         └──── predictor.py                      # script to predict the risk quantity in the next quarter.
