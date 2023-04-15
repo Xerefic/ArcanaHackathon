@@ -43,3 +43,10 @@ We employ a novel model to predict the risk for the upcoming quarter by utilizin
 The proposed architecture is as follows
 ![image](assets/arch.png)
 
+Usage
+```python
+predictor = QualitativePredictor("AAPL")
+predictor.fit(max_epochs=20)
+
+print(predictor.predict_next())
+```
