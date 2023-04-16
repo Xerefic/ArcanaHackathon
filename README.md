@@ -1,6 +1,11 @@
 # ArcanaHackathon
 ```Team: Hacker Bois```
 
+Link to [Video Submission](https://www.notion.so/techsoc/Video-and-Documentation-a2524e800e34422996a5de38a2f249e0?pvs=4)
+
+- Link to [Backend Repository](https://github.com/crew-guy/arcana-be)
+- Link to [Frontend Repository](https://github.com/jayanth151002/arcana-fe)
+
 # Documentation
 
 ## Data Structure
